@@ -25,3 +25,7 @@ body {
   border: 3px solid #fcfcfa;
   box-shadow: -2px 8px 20px -8px rgba(241, 249, 90, 0.885);
 }
+
+.country-info{
+  display: flex;
+}
