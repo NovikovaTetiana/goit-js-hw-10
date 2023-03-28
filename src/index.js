@@ -1,7 +1,7 @@
 import debounce from 'lodash.debounce';
 import './css/styles.css';
 import  {fetchCountries}  from './fetchCountries'
-import Notiflix from 'notiflix';
+import { Notify } from 'notiflix';
 
 const DEBOUNCE_DELAY = 300;
 
@@ -47,7 +47,7 @@ function markupList(data) {
   const markup = data
     .map(el => {
       return `<li class="country-item">
-            <img src="${el.flags.svg}" alt="${el.name.official}" width="40" height="20" /> 
+            <img src="${el.flags.svg}" alt="${el.name.official}" width="30" height="10" /> 
             <p>${el.name.official}</p>
             </li>`;
     })
